@@ -1,5 +1,5 @@
 const Carrito = () => {
-  return "carrito";
+  return "carrito 1";
 };
 
 export default Carrito;
