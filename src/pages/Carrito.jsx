@@ -1,5 +1,8 @@
 import { useContext } from "react";
 import { PizzasContext } from "../context/PizzasContext";
+import { Link } from "react-router-dom";
+//style
+import "../assets/css/carrito.css";
 
 const Carrito = () => {
   const { valoresContextoPizza } = useContext(PizzasContext);
@@ -10,26 +13,61 @@ const Carrito = () => {
     <>
       {cart.length ? (
         <div>
-          <h1>Card total: {total}</h1>
+          <div className="contenedor-titulo-total">
+            <h1>Card total: {total}</h1>
+          </div>
 
-          {cart.map((item, index) => (
-            <div key={index}>
-              <img src={item.img} alt={item.name} />
-              <h3>{item.name}</h3>
-              <h3>{item.price}</h3>
-              <p>{item.desc}</p>
+          <div className="wrapper-pedido">
+            <div className="contenedor-card-general">
+              {cart.map((item, index) => (
+                <div className="card-pedido" key={index}>
+                  <div className="contenedor-imagenPedido">
+                    <img src={item.img} alt={item.name} />
+                  </div>
 
-              <div>
-                <button onClick={() => incrementar(index)}>+</button>
-                <span>{item.count}</span>
-                <button onClick={() => decrementar(index)}>-</button>
-              </div>
+                  <div className="titulo-card-pedido">
+                    <h3>{item.name}</h3>
+                  </div>
+                  <div className="contenedor-precio">
+                    <h3>${item.price}</h3>
+                  </div>
+                  <div className="contenedor-descripcionPedido">
+                    <p>{item.desc}</p>
+                  </div>
+
+                  <div className="contendor-boton-pedido">
+                    <button
+                      className="signo-plus"
+                      onClick={() => incrementar(index)}
+                    >
+                      +
+                    </button>
+                    <span className="count-pedido">{item.count}</span>
+                    <button
+                      className="signo-minus"
+                      onClick={() => decrementar(index)}
+                    >
+                      -
+                    </button>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       ) : (
-        <p className="carrito-vacio">El carrito está vacio</p>
+        <div className="contenedor-mensaje">
+          <h1 className="carrito-vacio">El carrito está vacio</h1>
+        </div>
       )}
+
+      <div className="contenedor-boton-volver">
+        <button className="btn-volver-carrito">
+          <Link to="/" className="volver-link">
+            Volver
+          </Link>
+        </button>
+      </div>
     </>
   );
 };

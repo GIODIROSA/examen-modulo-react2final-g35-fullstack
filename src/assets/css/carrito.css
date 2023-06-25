@@ -1,0 +1,142 @@
+.wrapper-pedido {
+    max-width: 1040px;
+    margin: 2rem auto;
+}
+
+.contenedor-card-general {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 2rem;
+}
+
+.card-pedido {
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.contenedor-imagenPedido img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contenedor-mensaje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0px;
+}
+
+.contenedor-mensaje h1 {
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: #666;
+}
+
+.contenedor-boton-volver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-volver-carrito {
+    padding: 10px;
+    border: 0;
+    border-radius: 8px;
+    background-color: lightskyblue;
+
+}
+
+.btn-volver-carrito:hover {
+
+    background-color: lightcyan;
+
+}
+
+.titulo-card-pedido h3 {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color: #666;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 0px;
+}
+
+.volver-link {
+    text-decoration: none;
+    color: #666;
+    font-size: 1rem;
+}
+
+.contenedor-descripcionPedido {
+    height: 220px;
+}
+
+.contenedor-descripcionPedido p {
+    color: #666;
+    font-size: 1rem;
+    font-family: sans-serif;
+    text-align: justify;
+    padding: 0px 10px;
+}
+
+.contendor-boton-pedido {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    padding: 10px 0px;
+}
+
+.contenedor-precio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenedor-precio h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #666;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.contenedor-titulo-total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-titulo-total h1 {
+    margin: 0px;
+    font-size: 2rem;
+    color: #666;
+    font-weight: 300;
+    font-family: sans-serif;
+    padding: 2rem 0px;
+}
+
+.signo-plus {
+    padding: 5px;
+    border: 0;
+    background-color: lightgreen;
+    border-radius: 5px;
+}
+
+.count-pedido {
+    padding: 0px 10px;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.signo-minus {
+    padding: 5px;
+    border: 0;
+    background-color: lightcoral;
+    border-radius: 5px;
+    color: #fff;
+}
