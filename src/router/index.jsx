@@ -20,7 +20,7 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/pizza",
+        path: "/pizza/:id",
         element: <Pizza />,
       },
       {

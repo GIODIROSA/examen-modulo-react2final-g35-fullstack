@@ -1,0 +1,58 @@
+.pizzeria-contenedor__galeria {
+    max-width: 1140px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+
+}
+
+
+.card-pizza__contenedor {
+    width: 100%;
+    max-width: 380px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.border-separador {
+    background-color: #ddd;
+    height: 2px;
+    border-color: #fff;
+    margin: 0px;
+}
+
+.card-pizza__img img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    border-radius: 10px;
+}
+
+.titulo-pizza {
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+}
+
+.pizzeria-contenedor-botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .pizzeria-contenedor-botones {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+}
