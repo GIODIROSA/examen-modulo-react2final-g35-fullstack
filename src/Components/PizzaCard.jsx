@@ -11,7 +11,7 @@ const PizzaCard = () => {
   const { valoresContextoPizza } = useContext(PizzasContext);
   //console.log("data-home=>", valoresContextoPizza.pizzas);
 
-  const { pizzas, error, loading } = valoresContextoPizza;
+  const { pizzas, error, loading, addPizzaCarrito } = valoresContextoPizza;
   //console.log(pizzas);
 
   if (loading) return <h1>Loading...!</h1>;
@@ -48,7 +48,9 @@ const PizzaCard = () => {
             </div>
             <hr className="border-separador" />
             <div className="pizzeria-contenedor-botones">
-              <button>Agregar al carrito</button>
+              <button onClick={() => addPizzaCarrito(item)}>
+                Agregar al carrito
+              </button>
               <button
                 to={`pizza/${item.id}`}
                 onClick={() => handleDetallePizza(item.id)}

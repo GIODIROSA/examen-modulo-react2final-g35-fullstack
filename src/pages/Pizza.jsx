@@ -5,8 +5,6 @@ import { PizzasContext } from "../context/PizzasContext";
 const Pizza = () => {
   const [pizzaDetails, setPizzaDetails] = useState({});
 
-  console.log("probando=>", pizzaDetails);
-
   const { valoresContextoPizza } = useContext(PizzasContext);
   const { pizzas } = valoresContextoPizza;
   const { id } = useParams();
