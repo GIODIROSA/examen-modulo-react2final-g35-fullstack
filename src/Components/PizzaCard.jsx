@@ -48,10 +48,10 @@ const PizzaCard = () => {
             </div>
             <hr className="border-separador" />
             <div className="pizzeria-contenedor-botones">
-              <button onClick={() => addPizzaCarrito(item)}>
+              <button className="btn-agregarCarrito" onClick={() => addPizzaCarrito(item)}>
                 Agregar al carrito
               </button>
-              <button
+              <button className="btn-detallePizza"
                 to={`pizza/${item.id}`}
                 onClick={() => handleDetallePizza(item.id)}
               >

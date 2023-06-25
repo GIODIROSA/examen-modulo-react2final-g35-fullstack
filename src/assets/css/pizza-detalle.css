@@ -1,0 +1,104 @@
+.pizzeria-contenedor-general {
+    width: 100%;
+    max-width: 550px;
+    margin: 2rem auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.pizzeria-contenedor__pizzaDetalle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.pizzeria-contenedor__pizzaDetalle h1 {
+    font-size: 1.5rem;
+    color: #666;
+    font-family: sans-serif;
+}
+
+.pizzeria-contenedor__img {
+
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.pizzeria-contenedor__img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.pizzeria-contenedor__descripcion {
+    width: 100%;
+
+    margin: 10px auto;
+}
+
+.pizzeria-descripcion {
+    text-align: justify;
+    font-size: 1rem;
+    color: #666;
+    font-family: sans-serif;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.listado-ingrediente-pizzaDetalle li {
+    font-size: 1rem;
+    color: #666;
+    font-family: sans-serif;
+}
+
+.pizzeria-price__precio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizzeria-price__precio p {
+    font-size: 2rem;
+    color: #666;
+    font-family: sans-serif;
+}
+
+.pizzeria-contenedor__btnPizzaDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-volver {
+    width: 100%;
+    padding: 10px;
+    background-color: lightsteelblue;
+    border: 0px;
+
+}
+
+.btn-volver:hover {
+    background-color: lightpink;
+
+}
+
+.link-volver {
+    font-size: 1rem;
+    color: #666;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+
+    .pizzeria-descripcion {
+     
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+    }
+
+}

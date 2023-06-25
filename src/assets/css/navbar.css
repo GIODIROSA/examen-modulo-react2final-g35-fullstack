@@ -1,0 +1,34 @@
+.pizzeria-contenedor__navbar {
+    width: 100%;
+    background-color: lightcoral;
+}
+
+.pizzeria-listado__pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    margin: 0px;
+}
+
+.pizzeria-listado__pages li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.item-pages {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .pizzeria-listado__pages {
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+
+    }
+}
